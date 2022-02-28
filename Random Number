@@ -1,0 +1,19 @@
+a =float(input("Enter Value of a : "))
+x0=float(input("Enter Value of x : "))
+c =float(input("Enter Value of c : "))
+m =float(input("Enter Value of m : "))
+
+x1 = x0
+
+i=0
+while(1):
+    x1 = ((a*x1)+c)%m
+    r = x1/m
+    
+    i=i+1
+    print("Value :", x1) 
+    
+    print("Value of r :", r)
+    if(x1==x0):
+        break
+print("Count :", i)
